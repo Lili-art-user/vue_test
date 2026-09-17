@@ -1,0 +1,40 @@
+scope 只对当前页面有效，其他页同名不管
+
+<script lang='ts' setup>
+</script>
+
+<template>
+    <div>
+        展示html内容
+    </div>
+</template>
+    写html
+
+<script>
+</script>
+    写js/ts
+
+<style lang='less' scoped>
+</style>
+    写css
+
+v-text 与 v-html different:
+    v-text:原样输出
+    v-html：输出结果
+
+v-if与v-show different:
+    v-if false 不渲染
+    v-show false 会渲染并将样式设置为隐藏
+
+div
+    div 是块级元素，用于容器布局，配合 scoped 样式只影响当前组件
+
+<ol>  ol =  ordered   list  **有序列表**（自动带数字序号）
+<ul>  ul = unordered  list   **无序列表**（默认小圆点）
+
+
+export interface name{ sx:str}
+    `export`：**导出**，把当前文件里的变量、函数、接口、类型暴露出去，别的文件可以 `import` 引入。
+    import { name } from './xxx'
+    export * from './types
+
